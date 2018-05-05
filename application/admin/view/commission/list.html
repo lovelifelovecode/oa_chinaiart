@@ -1,0 +1,92 @@
+{extend name="base"}
+{block name="content"}
+            <div class="page-content">
+                <!-- Page Breadcrumb -->
+                <div class="page-breadcrumbs">
+                    <ul class="breadcrumb">
+                                        <li>
+                        <a href="{:url('commission/list')}">订单提成列表</a>
+                    </li>
+                                        <li class="active">订单提成列表</li>
+                                        </ul>
+                </div>
+                <!-- /Page Breadcrumb -->
+
+                <!-- Page Body -->
+                <div class="page-body">
+                    
+<button type="button" tooltip="添加提成配置" class="btn btn-sm btn-azure btn-addon" onClick="javascript:window.location.href = '{:url('add')}'"> <i class="fa fa-plus"></i> Add
+</button>
+<form class="col-lg-9" style="float: right;" action="" method="post">
+  <div class="col-lg-9" style="float:right; padding-bottom: 4px;">
+    <div class="input-group">
+      <input type="text" class="form-control" name="search" placeholder="Search for...">
+      <span class="input-group-btn">
+        <button class="btn btn-default" type="submit">Go!</button>
+      </span>
+    </div><!-- /input-group -->
+  </div><!-- /.col-lg-6 -->
+</form>
+<div class="row">
+    <div class="col-lg-12 col-sm-12 col-xs-12">
+        <div class="widget">
+            <div class="widget-body">
+                <div class="flip-scroll">
+                    <table class="table table-bordered table-hover">
+                        <thead class="">
+                            <tr>
+                                <th class="text-center"><a href="{:url('list',['column'=>'commission_id','order'=>$order])}">ID</a></th>
+                                <th class="text-center"><a href="{:url('list',['column'=>'commission_order_id','order'=>$order])}">订单名称</a></th>
+                                <th class="text-center"><a href="{:url('list',['column'=>'commission_order_title','order'=>$order])}">完成时间</a></th>
+                                <th class="text-center">订单总额</th>
+                                <th class="text-center">评分等级</th>
+                                <th class="text-center">提成总额</th>
+                                <th class="text-center">分配比例</th>
+                                <th class="text-center"><a href="{:url('list',['column'=>'commission_operator','order'=>$order])}">上一操作人</a></th>
+                                <th class="text-center">操作</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                                {foreach name='list' item='vo'}
+                                    <tr>
+                                        <td align="center">{$vo['commission_id']}</td>
+                                        <td align="center">{$vo['order_data']['order_title']}</td>
+                                        <td align="center">{php}echo date("Y-m-d",$vo['commission_complete_settime']); {/php}</td>
+                                        <td align="center">{$vo['order_data']['order_price']}元</td>
+                                        <td align="center">{$vo['rule_data']['rule_name']}</td>
+                                        <td align="center">{$vo['commission_total']}元</td>
+                                        <td align="center">
+{volist name="vo['percentageArr']" id="data"}
+    {volist name="data" id="lo"}
+        {$lo}&nbsp;&nbsp;&nbsp;&nbsp;
+    {/volist}
+
+<br>
+{/volist}
+                                        </td>
+                                        <td align="center">{$vo['commission_operator']}</td>
+                                        <td align="center">
+                                            <a href="{:url('edit',['commission_id'=>$vo['commission_id']])}" class="btn btn-primary btn-sm shiny">
+                                                <i class="fa fa-edit"></i> 编辑
+                                            </a>
+                                            <a href="#" onClick="warning('确实要删除吗', '{:url('del',['commission_id'=>$vo['commission_id']])}')" class="btn btn-danger btn-sm shiny">
+                                                <i class="fa fa-trash-o"></i> 删除
+                                            </a>
+                                        </td>
+                                    </tr>
+                                {/foreach}
+                        </tbody>
+                    </table>
+                    <p><div class="pagination pagination-sm pull-right">{$list->render()}</div></p>
+                </div>
+                <div>
+                                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+                </div>
+                <!-- /Page Body -->
+            </div>
+{/block}

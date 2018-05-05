@@ -5,7 +5,7 @@
                 <div class="page-breadcrumbs">
                     <ul class="breadcrumb">
                                         <li>
-                        <a href="#">系统</a>
+                       <a href="{:url('user/list')}">用户列表</a>
                     </li>
                                         <li class="active">用户管理</li>
                                         </ul>
@@ -14,9 +14,23 @@
 
                 <!-- Page Body -->
                 <div class="page-body">
-                    
-<button type="button" tooltip="添加用户" class="btn btn-sm btn-azure btn-addon" onClick="javascript:window.location.href = '{:url('useradd')}'"> <i class="fa fa-plus"></i> Add
+
+
+
+
+<button type="button" tooltip="添加用户" class="btn btn-sm btn-azure btn-addon" onClick="javascript:window.location.href = '{:url('add')}'"> <i class="fa fa-plus"></i> Add
 </button>
+<form class="col-lg-9" style="float: right;" action="" method="post">
+  <div class="col-lg-9" style="float:right; padding-bottom: 4px;">
+    <div class="input-group">
+      <input type="text" class="form-control" name="search" placeholder="Search for...">
+      <span class="input-group-btn">
+        <button class="btn btn-default" type="submit">Go!</button>
+      </span>
+    </div><!-- /input-group -->
+  </div><!-- /.col-lg-6 -->
+</form>
+
 <div class="row">
     <div class="col-lg-12 col-sm-12 col-xs-12">
         <div class="widget">
@@ -25,32 +39,29 @@
                     <table class="table table-bordered table-hover">
                         <thead class="">
                             <tr>
-                                <th class="text-center">ID</th>
-                                <th class="text-center">用户名称</th>
+                                <th class="text-center"><a href="{:url('list',['column'=>'user_id','order'=>$order])}">ID</a></th>
+                                <th class="text-center"><a href="{:url('list',['column'=>'user_username','order'=>$order])}">用户名称</a></th>
                                 <th class="text-center">操作</th>
                             </tr>
                         </thead>
                         <tbody>
-                            {if condition="!empty($list)"}
                                 {foreach name='list' item='vo'}
                                     <tr>
                                         <td align="center">{$vo['user_id']}</td>
                                         <td align="center">{$vo['user_username']}</td>
                                         <td align="center">
-                                            <a href="{:url('articleEdit',['user_id'=>$vo['user_id']])}" class="btn btn-primary btn-sm shiny">
+                                            <a href="{:url('edit',['user_id'=>$vo['user_id']])}" class="btn btn-primary btn-sm shiny">
                                                 <i class="fa fa-edit"></i> 编辑
                                             </a>
-                                            <a href="#" onClick="warning('确实要删除吗', '{:url('articleEdit',['user_id'=>$vo['user_id']])}')" class="btn btn-danger btn-sm shiny">
+                                            <a href="#" onClick="warning('确实要删除吗', '{:url('del',['user_id'=>$vo['user_id']])}')" class="btn btn-danger btn-sm shiny">
                                                 <i class="fa fa-trash-o"></i> 删除
                                             </a>
                                         </td>
                                     </tr>
                                 {/foreach}
-                            {else /}
-                                <tr><td style="color: red">还没有添加文章数据</td></tr>
-                            {/if}
                         </tbody>
                     </table>
+                    <p><div class="pagination pagination-sm pull-right">{$list->render()}</div></p>
                 </div>
                 <div>
                                     </div>

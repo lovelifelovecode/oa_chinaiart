@@ -1,0 +1,62 @@
+{extend name="base"}
+{block name="content"}
+            <div class="page-content">
+                <!-- Page Breadcrumb -->
+                <div class="page-breadcrumbs">
+                    <ul class="breadcrumb">
+                                        <li>
+                        <a href="{:url('role/list')}">角色列表</a>
+                    </li>
+                                        <li class="active">角色列表</li>
+                                        </ul>
+                </div>
+                <!-- /Page Breadcrumb -->
+
+                <!-- Page Body -->
+                <div class="page-body">
+                    
+<button type="button" tooltip="添加角色" class="btn btn-sm btn-azure btn-addon" onClick="javascript:window.location.href = '{:url('add')}'"> <i class="fa fa-plus"></i> Add
+</button>
+<div class="row">
+    <div class="col-lg-12 col-sm-12 col-xs-12">
+        <div class="widget">
+            <div class="widget-body">
+                <div class="flip-scroll">
+                    <table class="table table-bordered table-hover">
+                        <thead class="">
+                            <tr>
+                                <th class="text-center">ID</th>
+                                <th class="text-center">角色名称</th>
+                                <th class="text-center">操作</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                                {foreach name='list' item='vo'}
+                                    <tr>
+                                        <td align="center">{$vo['role_id']}</td>
+                                        <td align="center">{$vo['role_name']}</td>
+                                        <td align="center">
+                                            <a href="{:url('edit',['role_id'=>$vo['role_id']])}" class="btn btn-primary btn-sm shiny">
+                                                <i class="fa fa-edit"></i> 编辑
+                                            </a>
+                                            <a href="#" onClick="warning('确实要删除吗', '{:url('del',['role_id'=>$vo['role_id']])}')" class="btn btn-danger btn-sm shiny">
+                                                <i class="fa fa-trash-o"></i> 删除
+                                            </a>
+                                        </td>
+                                    </tr>
+                                {/foreach}
+                        </tbody>
+                    </table>
+                    <p><div class="pagination pagination-sm pull-right">{$list->render()}</div></p>
+                </div>
+                <div>
+                                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+                </div>
+                <!-- /Page Body -->
+            </div>
+{/block}

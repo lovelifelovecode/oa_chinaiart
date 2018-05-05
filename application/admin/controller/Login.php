@@ -40,4 +40,13 @@
 			$obj_url = Request::instance()->domain().Request::instance()->baseFile().'/login/login';
 			Common::alert_success('退出成功',$obj_url);exit;
 		}
+
+		/*
+		no authority
+		 */
+		public function noAuthority(){
+			$msg = $this->request->param('msg');
+			$this->assign('msg',$msg);
+			return $this -> fetch();
+		}
 	}

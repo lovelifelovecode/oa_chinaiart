@@ -1,0 +1,374 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+Authority	admin/controller/Authority.php	/^	class Authority extends Common$/;"	c
+Authority	admin/model/Authority.php	/^	class Authority extends Common{$/;"	c
+Commission	admin/controller/Commission.php	/^	class Commission extends Common{$/;"	c
+Commission	admin/model/Commission.php	/^	class Commission extends Common{$/;"	c
+Commission	admin/validate/Commission.php	/^	class Commission extends Validate$/;"	c
+Common	admin/controller/Common.php	/^	class Common extends Controller$/;"	c
+Common	admin/model/Common.php	/^	class Common extends Model{$/;"	c
+Group	admin/controller/Group.php	/^	class Group extends Common{$/;"	c
+Group	admin/model/Group.php	/^	class Group extends Common{$/;"	c
+Group	admin/validate/Group.php	/^	class Group extends Validate$/;"	c
+Index	admin/controller/Index.php	/^	class Index extends Common{$/;"	c
+Index	index/controller/Index.php	/^class Index$/;"	c
+Login	admin/controller/Login.php	/^	class Login extends Controller{$/;"	c
+Login	admin/model/Login.php	/^	class Login extends Common{$/;"	c
+OneCommission	admin/controller/OneCommission.php	/^	class OneCommission extends Common{$/;"	c
+Order	admin/controller/Order.php	/^	class Order extends Common{$/;"	c
+Order	admin/model/Order.php	/^	class Order extends Common{$/;"	c
+Order	admin/validate/Order.php	/^	class Order extends Validate$/;"	c
+Role	admin/controller/Role.php	/^	class Role extends Common{$/;"	c
+Role	admin/model/Role.php	/^	class Role extends Common{$/;"	c
+Role	admin/validate/Authority.php	/^	class Role extends Validate$/;"	c
+Role	admin/validate/Role.php	/^	class Role extends Validate$/;"	c
+Rule	admin/controller/Rule.php	/^	class Rule extends Common{$/;"	c
+Rule	admin/model/Rule.php	/^	class Rule extends Common{$/;"	c
+Rule	admin/validate/Rule.php	/^	class Rule extends Validate$/;"	c
+User	admin/controller/User.php	/^	class User extends Common{$/;"	c
+User	admin/model/User.php	/^	class User extends Common$/;"	c
+User	admin/validate/User.php	/^	class User extends Validate$/;"	c
+UserGroup	admin/model/UserGroup.php	/^	class UserGroup extends Common{$/;"	c
+__construct	admin/controller/Common.php	/^		public function __construct(Request $request=null){$/;"	f
+_initialize	admin/controller/Authority.php	/^		public function _initialize(){$/;"	f
+_initialize	admin/controller/Commission.php	/^		public function _initialize(){$/;"	f
+_initialize	admin/controller/Group.php	/^		public function _initialize(){$/;"	f
+_initialize	admin/controller/Login.php	/^		protected function _initialize(){$/;"	f
+_initialize	admin/controller/OneCommission.php	/^		public function _initialize(){$/;"	f
+_initialize	admin/controller/Order.php	/^		public function _initialize(){$/;"	f
+_initialize	admin/controller/Role.php	/^		public function _initialize(){$/;"	f
+_initialize	admin/controller/Rule.php	/^		public function _initialize(){$/;"	f
+_initialize	admin/controller/User.php	/^		public function _initialize(){$/;"	f
+add	admin/controller/Authority.php	/^		public function add(){$/;"	f
+add	admin/controller/Commission.php	/^		public function add(){$/;"	f
+add	admin/controller/Group.php	/^		public function add(){$/;"	f
+add	admin/controller/OneCommission.php	/^		public function add(){$/;"	f
+add	admin/controller/Order.php	/^		public function add(){$/;"	f
+add	admin/controller/Role.php	/^		public function add(){$/;"	f
+add	admin/controller/Rule.php	/^		public function add(){$/;"	f
+add	admin/controller/User.php	/^		public function add(){$/;"	f
+add	admin/model/Authority.php	/^		public function add($data){$/;"	f
+add	admin/model/Commission.php	/^		public function add($data){$/;"	f
+add	admin/model/Group.php	/^		public function add($data){$/;"	f
+add	admin/model/Order.php	/^		public function add($data){$/;"	f
+add	admin/model/Role.php	/^		public function add($data){$/;"	f
+add	admin/model/Rule.php	/^		public function add($data){$/;"	f
+add	admin/model/User.php	/^		public function add($data){$/;"	f
+alert_fail	admin/controller/Common.php	/^		public static function alert_fail($msg=''){$/;"	f
+alert_success	admin/controller/Common.php	/^		public static function alert_success($msg='',$url=''){ $/;"	f
+arr	admin/model/Group.php	/^			$arr = [];$/;"	v
+authority_id	admin/controller/Authority.php	/^			$authority_id = Request::instance()->param('authority_id');$/;"	v
+commission_id	admin/controller/Commission.php	/^			$commission_id = Request::instance()->param('commission_id');$/;"	v
+commission_id	admin/controller/OneCommission.php	/^			$commission_id = Request::instance()->param('commission_id');$/;"	v
+data_old	admin/controller/Authority.php	/^			$data_old = $this->db->getOneInfo($authority_id);$/;"	v
+data_old	admin/controller/Commission.php	/^			$data_old = $this->db->getOneInfo($commission_id);$/;"	v
+data_old	admin/controller/Group.php	/^			$data_old = $this->db->getOneInfo($group_id);$/;"	v
+data_old	admin/controller/OneCommission.php	/^			$data_old = $this->db->getOneInfo($commission_id);$/;"	v
+data_old	admin/controller/Order.php	/^			$data_old = $this->db->getOneInfo($order_id);$/;"	v
+data_old	admin/controller/Role.php	/^			$data_old = $this->db->getOneInfo($role_id);$/;"	v
+data_old	admin/controller/Rule.php	/^			$data_old = $this->db->getOneInfo($rule_id);$/;"	v
+data_old	admin/controller/User.php	/^			$data_old = $this->db->getOneInfo($user_id);$/;"	v
+data_old	admin/model/Authority.php	/^			$data_old = $this->where('authority_id',$authority_id)->find();$/;"	v
+data_old	admin/model/Commission.php	/^			$data_old = $this->where('commission_id',$commission_id)->find();$/;"	v
+data_old	admin/model/Group.php	/^			$data_old = $this->where('group_id',$group_id)->find();$/;"	v
+data_old	admin/model/Order.php	/^			$data_old = $this::get($order_id);$/;"	v
+data_old	admin/model/Role.php	/^			$data_old = $this->where('role_id',$role_id)->find();$/;"	v
+data_old	admin/model/Rule.php	/^			$data_old = $this->where('rule_id',$rule_id)->find();$/;"	v
+data_old	admin/model/User.php	/^			$data_old = $this->where('user_id',$user_id)->find();$/;"	v
+db	admin/controller/Authority.php	/^		protected $db;$/;"	v
+db	admin/controller/Commission.php	/^			$this->db = new \\app\\admin\\model\\Commission();$/;"	v
+db	admin/controller/Commission.php	/^		public $db;$/;"	v
+db	admin/controller/Group.php	/^			$this->db = new \\app\\admin\\model\\Group();$/;"	v
+db	admin/controller/Group.php	/^		public $db;$/;"	v
+db	admin/controller/Login.php	/^		protected $db;$/;"	v
+db	admin/controller/OneCommission.php	/^			$this->db = new \\app\\admin\\model\\Commission();$/;"	v
+db	admin/controller/OneCommission.php	/^		public $db;$/;"	v
+db	admin/controller/Order.php	/^			$this->db = new \\app\\admin\\model\\Order();$/;"	v
+db	admin/controller/Order.php	/^		public $db;$/;"	v
+db	admin/controller/Role.php	/^			$this->db = new \\app\\admin\\model\\Role();$/;"	v
+db	admin/controller/Role.php	/^		public $db;$/;"	v
+db	admin/controller/Rule.php	/^			$this->db = new \\app\\admin\\model\\Rule();$/;"	v
+db	admin/controller/Rule.php	/^		public $db;$/;"	v
+db	admin/controller/User.php	/^		protected $db;$/;"	v
+del	admin/controller/Authority.php	/^		public function del(){$/;"	f
+del	admin/controller/Commission.php	/^		public function del(){$/;"	f
+del	admin/controller/Group.php	/^		public function del(){$/;"	f
+del	admin/controller/OneCommission.php	/^		public function del(){$/;"	f
+del	admin/controller/Order.php	/^		public function del(){$/;"	f
+del	admin/controller/Role.php	/^		public function del(){$/;"	f
+del	admin/controller/Rule.php	/^		public function del(){$/;"	f
+del	admin/controller/User.php	/^		public function del(){$/;"	f
+del	admin/model/Authority.php	/^		public function del($authority_id){$/;"	f
+del	admin/model/Commission.php	/^		public function del($commission_id){$/;"	f
+del	admin/model/Group.php	/^		public function del($group_id){$/;"	f
+del	admin/model/Order.php	/^		public function del($order_id){$/;"	f
+del	admin/model/Role.php	/^		public function del($role_id){$/;"	f
+del	admin/model/Rule.php	/^		public function del($rule_id){$/;"	f
+del	admin/model/User.php	/^		public function del($user_id){$/;"	f
+edit	admin/controller/Authority.php	/^		public function edit(){$/;"	f
+edit	admin/controller/Commission.php	/^		public function edit(){$/;"	f
+edit	admin/controller/Group.php	/^		public function edit(){$/;"	f
+edit	admin/controller/OneCommission.php	/^		public function edit(){$/;"	f
+edit	admin/controller/Order.php	/^		public function edit(){$/;"	f
+edit	admin/controller/Role.php	/^		public function edit(){$/;"	f
+edit	admin/controller/Rule.php	/^		public function edit(){$/;"	f
+edit	admin/controller/User.php	/^		public function edit(){$/;"	f
+edit	admin/model/Authority.php	/^		public function edit($data){$/;"	f
+edit	admin/model/Commission.php	/^		public function edit($data){$/;"	f
+edit	admin/model/Group.php	/^		public function edit($data){$/;"	f
+edit	admin/model/Order.php	/^		public function edit($data){$/;"	f
+edit	admin/model/Role.php	/^		public function edit($data){$/;"	f
+edit	admin/model/Rule.php	/^		public function edit($data){$/;"	f
+edit	admin/model/User.php	/^		public function edit($data){$/;"	f
+getAuthorityInsertTimeAttr	admin/model/Authority.php	/^		protected function getAuthorityInsertTimeAttr($value){$/;"	f
+getAuthorityUpdateTimeAttr	admin/model/Authority.php	/^		protected function getAuthorityUpdateTimeAttr($value){$/;"	f
+getCommissionInsertTimeAttr	admin/model/Commission.php	/^		protected function getCommissionInsertTimeAttr($value){$/;"	f
+getCommissionUpdateTimeAttr	admin/model/Commission.php	/^		protected function getCommissionUpdateTimeAttr($value){$/;"	f
+getGroupInsertTimeAttr	admin/model/Group.php	/^		protected function getGroupInsertTimeAttr($value){$/;"	f
+getGroupUpdateTimeAttr	admin/model/Group.php	/^		protected function getGroupUpdateTimeAttr($value){$/;"	f
+getList	admin/model/Group.php	/^		public function getList(){$/;"	f
+getList	admin/model/Order.php	/^		public function getList(){$/;"	f
+getList	admin/model/Rule.php	/^		public function getList(){$/;"	f
+getList	admin/model/User.php	/^		public function getList(){$/;"	f
+getOneInfo	admin/model/Authority.php	/^		public function getOneInfo($authority_id){$/;"	f
+getOneInfo	admin/model/Commission.php	/^		public function getOneInfo($commission_id){$/;"	f
+getOneInfo	admin/model/Group.php	/^		public function getOneInfo($group_id){$/;"	f
+getOneInfo	admin/model/Order.php	/^		public function getOneInfo($order_id){$/;"	f
+getOneInfo	admin/model/Role.php	/^		public function getOneInfo($role_id){$/;"	f
+getOneInfo	admin/model/Rule.php	/^		public function getOneInfo($rule_id){$/;"	f
+getOneInfo	admin/model/User.php	/^		public function getOneInfo($user_id){$/;"	f
+getOrderGettimeAttr	admin/model/Order.php	/^		protected function getOrderGettimeAttr($value){$/;"	f
+getOrderInsertTimeAttr	admin/model/Order.php	/^		protected function getOrderInsertTimeAttr($value){$/;"	f
+getOrderSettimeAttr	admin/model/Order.php	/^		protected function getOrderSettimeAttr($value){$/;"	f
+getOrderUpdateTimeAttr	admin/model/Order.php	/^		protected function getOrderUpdateTimeAttr($value){$/;"	f
+getRoleInsertTimeAttr	admin/model/Role.php	/^		protected function getRoleInsertTimeAttr($value){$/;"	f
+getRoleUpdateTimeAttr	admin/model/Role.php	/^		protected function getRoleUpdateTimeAttr($value){$/;"	f
+getRuleInsertTimeAttr	admin/model/Rule.php	/^		protected function getRuleInsertTimeAttr($value){$/;"	f
+getRuleUpdateTimeAttr	admin/model/Rule.php	/^		protected function getRuleUpdateTimeAttr($value){$/;"	f
+getUserInsertTimeAttr	admin/model/Login.php	/^		protected function getUserInsertTimeAttr($value){$/;"	f
+getUserInsertTimeAttr	admin/model/User.php	/^		protected function getUserInsertTimeAttr($value){$/;"	f
+getUserUpdateTimeAttr	admin/model/Login.php	/^		protected function getUserUpdateTimeAttr($value){$/;"	f
+getUserUpdateTimeAttr	admin/model/User.php	/^		protected function getUserUpdateTimeAttr($value){$/;"	f
+group	admin/model/Commission.php	/^		public function group(){$/;"	f
+group	admin/model/Group.php	/^				$group = $this::get($data['group_id']);$/;"	v
+group	admin/model/Group.php	/^				$group = $this::get($value['group_id']);$/;"	v
+group	admin/model/Group.php	/^			$group = $this :: get($group_id);$/;"	v
+group	admin/model/Group.php	/^			$group = $this::get($group_id);$/;"	v
+group_id	admin/controller/Group.php	/^			$group_id = Request::instance()->param('group_id');$/;"	v
+group_id	admin/model/Group.php	/^			$group_id = $this -> group_id;$/;"	v
+groups	admin/controller/Commission.php	/^			$groups = (new \\app\\admin\\model\\Group()) -> getList();$/;"	v
+groups	admin/model/Group.php	/^			$groups = $this -> where('group_status',1) -> field('group_id,group_name') -> select();\/\/column('group_name','group_id');\/\/$/;"	v
+index	admin/controller/Index.php	/^		public function index(){$/;"	f
+index	index/controller/Index.php	/^    public function index()$/;"	f
+insert	admin/model/Authority.php	/^		protected $insert = ['authority_insert_time'];$/;"	v
+insert	admin/model/Commission.php	/^		protected $insert = ['commission_insert_time'];$/;"	v
+insert	admin/model/Group.php	/^		protected $insert = ['group_insert_time'];$/;"	v
+insert	admin/model/Login.php	/^		protected $insert = ['user_insert_time'];$/;"	v
+insert	admin/model/Order.php	/^		protected $insert = ['order_insert_time'];$/;"	v
+insert	admin/model/Role.php	/^		protected $insert = ['role_insert_time'];$/;"	v
+insert	admin/model/Rule.php	/^		protected $insert = ['rule_insert_time'];$/;"	v
+insert	admin/model/User.php	/^		protected $insert = ['user_insert_time'];$/;"	v
+insert	admin/model/UserGroup.php	/^		protected $insert = ['insert_time'];$/;"	v
+is	admin/controller/Authority.php	/^		This function is about list of authority.$/;"	f
+is	admin/controller/Login.php	/^	This class is about landing.$/;"	c
+is	admin/model/Login.php	/^	This class is about landing.$/;"	c
+is	admin/model/User.php	/^	* This class is about user infotation.$/;"	c
+is_admin	admin/controller/Common.php	/^				$is_admin = (new \\app\\admin\\model\\AdminUser())->get(session('user.user_id'));$/;"	v
+is_exist	admin/model/Authority.php	/^			$is_exist = $this->where('authority_title',$data['authority_title'])->find();$/;"	v
+is_exist	admin/model/Authority.php	/^			$is_exist = $this->where('authority_title',$data['authority_title'])->whereNotIn('authority_id',$data['authority_id'])->find();$/;"	v
+is_exist	admin/model/Commission.php	/^			$is_exist = $this->where('commission_order_id',$data['commission_order_id'])->find();$/;"	v
+is_exist	admin/model/Commission.php	/^			$is_exist = $this->where('commission_order_id',$data['commission_order_id'])->whereNotIn('commission_id',$data['commission_id'])->find();$/;"	v
+is_exist	admin/model/Group.php	/^			$is_exist = $this->where('group_name',$data['group_name'])->find();$/;"	v
+is_exist	admin/model/Group.php	/^			$is_exist = $this->where('group_name',$data['group_name'])->whereNotIn('group_id',$data['group_id'])->find();$/;"	v
+is_exist	admin/model/Order.php	/^			$is_exist = $this->where('order_title',$data['order_title'])->find();$/;"	v
+is_exist	admin/model/Order.php	/^			$is_exist = $this->where('order_title',$data['order_title'])->whereNotIn('order_id',$data['order_id'])->find();$/;"	v
+is_exist	admin/model/Role.php	/^			$is_exist = $this->where('role_name',$data['role_name'])->find();$/;"	v
+is_exist	admin/model/Role.php	/^			$is_exist = $this->where('role_name',$data['role_name'])->whereNotIn('role_id',$data['role_id'])->find();$/;"	v
+is_exist	admin/model/Rule.php	/^			$is_exist = $this->where('rule_name',$data['rule_name'])->find();$/;"	v
+is_exist	admin/model/Rule.php	/^			$is_exist = $this->where('rule_name',$data['rule_name'])->whereNotIn('rule_id',$data['rule_id'])->find();$/;"	v
+is_exist	admin/model/User.php	/^			$is_exist = $this->where('user_username',$data['user_username'])->find();$/;"	v
+is_exist	admin/model/User.php	/^			$is_exist = $this->where('user_username',$data['user_username'])->whereNotIn('user_id',$data['user_id'])->find();$/;"	v
+key	admin/model/Commission.php	/^			foreach($list as $key => &$value){$/;"	v
+key	admin/model/Group.php	/^					foreach ($user_selected as $key => $value) {$/;"	v
+key	admin/model/Group.php	/^			foreach ($groups as $key => &$value) {$/;"	v
+key	admin/model/Group.php	/^			foreach ($users as $key => $value) {$/;"	v
+list	admin/controller/Authority.php	/^			$list = $this->db->list();$/;"	v
+list	admin/controller/Authority.php	/^		public function list(){$/;"	f
+list	admin/controller/Commission.php	/^			$list = $this -> db -> list();$/;"	v
+list	admin/controller/Commission.php	/^		public function list(){$/;"	f
+list	admin/controller/Group.php	/^			$list = $this -> db -> list();$/;"	v
+list	admin/controller/Group.php	/^		public function list(){$/;"	f
+list	admin/controller/OneCommission.php	/^			$list = $this -> db -> list();$/;"	v
+list	admin/controller/OneCommission.php	/^		public function list(){$/;"	f
+list	admin/controller/Order.php	/^			$list = $this -> db -> list();$/;"	v
+list	admin/controller/Order.php	/^		public function list(){$/;"	f
+list	admin/controller/Role.php	/^			$list = $this -> db -> list();$/;"	v
+list	admin/controller/Role.php	/^		public function list(){$/;"	f
+list	admin/controller/Rule.php	/^			$list = $this -> db -> list();$/;"	v
+list	admin/controller/Rule.php	/^		public function list(){$/;"	f
+list	admin/controller/User.php	/^			$list = $this -> db -> list();$/;"	v
+list	admin/controller/User.php	/^		public function list(){$/;"	f
+list	admin/model/Authority.php	/^			$list = $this::paginate(15);$/;"	v
+list	admin/model/Authority.php	/^		public function list(){$/;"	f
+list	admin/model/Commission.php	/^			$list = $this::paginate(15);$/;"	v
+list	admin/model/Commission.php	/^		public function list(){$/;"	f
+list	admin/model/Group.php	/^			$list = $this::paginate(15);$/;"	v
+list	admin/model/Group.php	/^		public function list(){$/;"	f
+list	admin/model/Order.php	/^			$list = $this::paginate(15);$/;"	v
+list	admin/model/Order.php	/^		public function list(){$/;"	f
+list	admin/model/Role.php	/^			$list = $this::paginate(15);$/;"	v
+list	admin/model/Role.php	/^		public function list(){$/;"	f
+list	admin/model/Rule.php	/^			$list = $this::paginate(15);$/;"	v
+list	admin/model/Rule.php	/^		public function list(){$/;"	f
+list	admin/model/User.php	/^			$list = $this::paginate(15);$/;"	v
+list	admin/model/User.php	/^		public function list(){$/;"	f
+list_add	admin/model/Group.php	/^					$list_add = array_diff($data['user_ids'], $user_old);$/;"	v
+list_delete	admin/model/Group.php	/^					$list_delete = array_diff($user_old,$data['user_ids']);$/;"	v
+login	admin/controller/Login.php	/^		public function login(){$/;"	f
+login	admin/model/Login.php	/^		public function login($data){$/;"	f
+logout	admin/controller/Login.php	/^		public function logout(){$/;"	f
+message	admin/validate/Authority.php	/^		protected $message = [$/;"	v
+message	admin/validate/Commission.php	/^		protected $message = [$/;"	v
+message	admin/validate/Group.php	/^		protected $message = [$/;"	v
+message	admin/validate/Order.php	/^		protected $message = [$/;"	v
+message	admin/validate/Role.php	/^		protected $message = [$/;"	v
+message	admin/validate/Rule.php	/^		protected $message = [$/;"	v
+message	admin/validate/User.php	/^		protected $message = [$/;"	v
+name	admin/model/Login.php	/^		protected $name='user';$/;"	v
+obj_url	admin/controller/Authority.php	/^					$obj_url = Request::instance()->domain().Request::instance()->baseFile().'\/authority\/list';$/;"	v
+obj_url	admin/controller/Authority.php	/^				$obj_url = Request::instance()->domain().Request::instance()->baseFile().'\/authority\/list';$/;"	v
+obj_url	admin/controller/Commission.php	/^					$obj_url = Request::instance()->domain().Request::instance()->baseFile().'\/commission\/list';$/;"	v
+obj_url	admin/controller/Commission.php	/^				$obj_url = Request::instance()->domain().Request::instance()->baseFile().'\/commission\/list';$/;"	v
+obj_url	admin/controller/Group.php	/^					$obj_url = Request::instance()->domain().Request::instance()->baseFile().'\/group\/list';$/;"	v
+obj_url	admin/controller/Group.php	/^				$obj_url = Request::instance()->domain().Request::instance()->baseFile().'\/group\/list';$/;"	v
+obj_url	admin/controller/Login.php	/^					$obj_url = Request::instance()->domain().Request::instance()->baseFile().'\/index\/index';$/;"	v
+obj_url	admin/controller/Login.php	/^			$obj_url = Request::instance()->domain().Request::instance()->baseFile().'\/login\/login';$/;"	v
+obj_url	admin/controller/OneCommission.php	/^					$obj_url = Request::instance()->domain().Request::instance()->baseFile().'\/commission\/list';$/;"	v
+obj_url	admin/controller/OneCommission.php	/^				$obj_url = Request::instance()->domain().Request::instance()->baseFile().'\/commission\/list';$/;"	v
+obj_url	admin/controller/Order.php	/^					$obj_url = Request::instance()->domain().Request::instance()->baseFile().'\/order\/list';$/;"	v
+obj_url	admin/controller/Order.php	/^				$obj_url = Request::instance()->domain().Request::instance()->baseFile().'\/order\/list';$/;"	v
+obj_url	admin/controller/Role.php	/^					$obj_url = Request::instance()->domain().Request::instance()->baseFile().'\/role\/list';$/;"	v
+obj_url	admin/controller/Role.php	/^				$obj_url = Request::instance()->domain().Request::instance()->baseFile().'\/role\/list';$/;"	v
+obj_url	admin/controller/Rule.php	/^					$obj_url = Request::instance()->domain().Request::instance()->baseFile().'\/rule\/list';$/;"	v
+obj_url	admin/controller/Rule.php	/^				$obj_url = Request::instance()->domain().Request::instance()->baseFile().'\/rule\/list';$/;"	v
+obj_url	admin/controller/User.php	/^					$obj_url = Request::instance()->domain().Request::instance()->baseFile().'\/index\/index';$/;"	v
+obj_url	admin/controller/User.php	/^					$obj_url = Request::instance()->domain().Request::instance()->baseFile().'\/user\/list';$/;"	v
+obj_url	admin/controller/User.php	/^				$obj_url = Request::instance()->domain().Request::instance()->baseFile().'\/user\/list';$/;"	v
+order_id	admin/controller/Order.php	/^			$order_id = Request::instance()->param('order_id');$/;"	v
+orders	admin/controller/Commission.php	/^			$orders = (new \\app\\admin\\model\\Order()) -> getList();$/;"	v
+passwordEdit	admin/controller/User.php	/^		public function passwordEdit(){$/;"	f
+passwordEdit	admin/model/User.php	/^		public function passwordEdit($data){$/;"	f
+password_old	admin/model/User.php	/^			$password_old = $this ->where('user_id',$data['user_id']) -> value('user_password');$/;"	v
+replace	admin/model/Group.php	/^		public function replace($id){$/;"	f
+replace	admin/model/Order.php	/^		public function replace($id){$/;"	f
+request	admin/controller/Common.php	/^		public function __construct(Request $request=null){$/;"	v
+res	admin/controller/Authority.php	/^				$res = $this -> db -> add(Request::instance()->param());$/;"	v
+res	admin/controller/Authority.php	/^				$res = $this -> db -> edit(Request::instance()->param());$/;"	v
+res	admin/controller/Authority.php	/^			$res = $this->db->del($authority_id);$/;"	v
+res	admin/controller/Commission.php	/^				$res = $this -> db -> add(Request::instance()->param());$/;"	v
+res	admin/controller/Commission.php	/^				$res = $this -> db -> edit(Request::instance()->param());$/;"	v
+res	admin/controller/Commission.php	/^			$res = $this->db->del($commission_id);$/;"	v
+res	admin/controller/Group.php	/^				$res = $this -> db -> add(Request::instance()->param());$/;"	v
+res	admin/controller/Group.php	/^				$res = $this -> db -> edit(Request::instance()->param());$/;"	v
+res	admin/controller/Group.php	/^			$res = $this->db->del($group_id);$/;"	v
+res	admin/controller/Login.php	/^				$res = $this -> db -> login(Request::instance() -> param());$/;"	v
+res	admin/controller/OneCommission.php	/^				$res = $this -> db -> add(Request::instance()->param());$/;"	v
+res	admin/controller/OneCommission.php	/^				$res = $this -> db -> edit(Request::instance()->param());$/;"	v
+res	admin/controller/OneCommission.php	/^			$res = $this->db->del($commission_id);$/;"	v
+res	admin/controller/Order.php	/^				$res = $this -> db -> add(Request::instance()->param());$/;"	v
+res	admin/controller/Order.php	/^				$res = $this -> db -> edit(Request::instance()->param());$/;"	v
+res	admin/controller/Order.php	/^			$res = $this->db->del($order_id);$/;"	v
+res	admin/controller/Role.php	/^				$res = $this -> db -> add(Request::instance()->param());$/;"	v
+res	admin/controller/Role.php	/^				$res = $this -> db -> edit(Request::instance()->param());$/;"	v
+res	admin/controller/Role.php	/^			$res = $this->db->del($role_id);$/;"	v
+res	admin/controller/Rule.php	/^				$res = $this -> db -> add(Request::instance()->param());$/;"	v
+res	admin/controller/Rule.php	/^				$res = $this -> db -> edit(Request::instance()->param());$/;"	v
+res	admin/controller/Rule.php	/^			$res = $this->db->del($rule_id);$/;"	v
+res	admin/controller/User.php	/^				$res = $this -> db -> add(Request::instance()->param());$/;"	v
+res	admin/controller/User.php	/^				$res = $this -> db -> edit(Request::instance()->param());$/;"	v
+res	admin/controller/User.php	/^				$res = $this -> db -> passwordEdit(Request::instance()->param());$/;"	v
+res	admin/controller/User.php	/^			$res = $this->db->del($user_id);$/;"	v
+res	admin/model/Authority.php	/^			$res = $this::destroy($authority_id);$/;"	v
+res	admin/model/Commission.php	/^			$res = $this::destroy($commission_id);$/;"	v
+res	admin/model/Group.php	/^			$res = $this::destroy($group_id);$/;"	v
+res	admin/model/Login.php	/^			$res = $this -> where('user_username',$data['username'])->find();$/;"	v
+res	admin/model/Login.php	/^			$res = $this -> where('user_username',$data['username'])->where('user_password',md5(md5('skyuse').md5($data['password'])))->find();$/;"	v
+res	admin/model/Order.php	/^			$res = $this::destroy($order_id);$/;"	v
+res	admin/model/Role.php	/^			$res = $this::destroy($role_id);$/;"	v
+res	admin/model/Rule.php	/^			$res = $this::destroy($rule_id);$/;"	v
+res	admin/model/User.php	/^			$res = $this-> where('user_id',$data['user_id'])->update(['user_password'=>md5(md5('skyuse').md5($data['password_new']))]);$/;"	v
+res	admin/model/User.php	/^			$res = $this::destroy($user_id);$/;"	v
+result	admin/model/Authority.php	/^			$result = $this->save($data);$/;"	v
+result	admin/model/Authority.php	/^			$result = $this->save($data,$data['authority_id']);$/;"	v
+result	admin/model/Commission.php	/^			$result = $this->save($data);$/;"	v
+result	admin/model/Commission.php	/^			$result = $this->save($data,$data['commission_id']);$/;"	v
+result	admin/model/Group.php	/^			$result = $this -> allowField(true) -> save($data,$data['group_id']);$/;"	v
+result	admin/model/Group.php	/^			$result = $this -> allowField(true) ->save($data);$/;"	v
+result	admin/model/Order.php	/^			$result = $this->save($data);$/;"	v
+result	admin/model/Order.php	/^			$result = $this->save($data,$data['order_id']);$/;"	v
+result	admin/model/Role.php	/^			$result = $this->save($data);$/;"	v
+result	admin/model/Role.php	/^			$result = $this->save($data,$data['role_id']);$/;"	v
+result	admin/model/Rule.php	/^			$result = $this->save($data);$/;"	v
+result	admin/model/Rule.php	/^			$result = $this->save($data,$data['rule_id']);$/;"	v
+result	admin/model/User.php	/^			$result = $this->save($data);$/;"	v
+result	admin/model/User.php	/^			$result = $this->save($data,$data['user_id']);$/;"	v
+role_id	admin/controller/Role.php	/^			$role_id = Request::instance()->param('role_id');$/;"	v
+rule	admin/validate/Authority.php	/^		protected $rule = [$/;"	v
+rule	admin/validate/Commission.php	/^		protected $rule = [$/;"	v
+rule	admin/validate/Group.php	/^		protected $rule = [$/;"	v
+rule	admin/validate/Order.php	/^		protected $rule = [$/;"	v
+rule	admin/validate/Role.php	/^		protected $rule = [$/;"	v
+rule	admin/validate/Rule.php	/^		protected $rule = [$/;"	v
+rule	admin/validate/User.php	/^		protected $rule = [$/;"	v
+rule_id	admin/controller/Rule.php	/^			$rule_id = Request::instance()->param('rule_id');$/;"	v
+rules	admin/controller/Commission.php	/^			$rules  = (new \\app\\admin\\model\\Rule())  -> getList();$/;"	v
+setAuthorityInsertTimeAttr	admin/model/Authority.php	/^		protected function setAuthorityInsertTimeAttr($value){$/;"	f
+setAuthorityUpdateTimeAttr	admin/model/Authority.php	/^		protected function setAuthorityUpdateTimeAttr($value){$/;"	f
+setCommissionInsertTimeAttr	admin/model/Commission.php	/^		protected function setCommissionInsertTimeAttr($value){$/;"	f
+setCommissionUpdateTimeAttr	admin/model/Commission.php	/^		protected function setCommissionUpdateTimeAttr($value){$/;"	f
+setGroupInsertTimeAttr	admin/model/Group.php	/^		protected function setGroupInsertTimeAttr($value){$/;"	f
+setGroupUpdateTimeAttr	admin/model/Group.php	/^		protected function setGroupUpdateTimeAttr($value){$/;"	f
+setInsertTimeAttr	admin/model/UserGroup.php	/^		protected function setInsertTimeAttr($value){$/;"	f
+setOrderGettimeAttr	admin/model/Order.php	/^		protected function setOrderGettimeAttr($value){$/;"	f
+setOrderInsertTimeAttr	admin/model/Order.php	/^		protected function setOrderInsertTimeAttr($value){$/;"	f
+setOrderSettimeAttr	admin/model/Order.php	/^		protected function setOrderSettimeAttr($value){$/;"	f
+setOrderUpdateTimeAttr	admin/model/Order.php	/^		protected function setOrderUpdateTimeAttr($value){$/;"	f
+setRoleInsertTimeAttr	admin/model/Role.php	/^		protected function setRoleInsertTimeAttr($value){$/;"	f
+setRoleUpdateTimeAttr	admin/model/Role.php	/^		protected function setRoleUpdateTimeAttr($value){$/;"	f
+setRuleInsertTimeAttr	admin/model/Rule.php	/^		protected function setRuleInsertTimeAttr($value){$/;"	f
+setRuleUpdateTimeAttr	admin/model/Rule.php	/^		protected function setRuleUpdateTimeAttr($value){$/;"	f
+setUserInsertTimeAttr	admin/model/Login.php	/^		protected function setUserInsertTimeAttr($value){$/;"	f
+setUserInsertTimeAttr	admin/model/User.php	/^		protected function setUserInsertTimeAttr($value){$/;"	f
+setUserUpdateTimeAttr	admin/model/Login.php	/^		protected function setUserUpdateTimeAttr($value){$/;"	f
+setUserUpdateTimeAttr	admin/model/User.php	/^		protected function setUserUpdateTimeAttr($value){$/;"	f
+update	admin/model/Authority.php	/^		protected $update = ['authority_update_time'];$/;"	v
+update	admin/model/Commission.php	/^		protected $update = ['commission_update_time'];$/;"	v
+update	admin/model/Group.php	/^		protected $update = ['group_update_time'];$/;"	v
+update	admin/model/Login.php	/^		protected $update = ['user_update_time'];$/;"	v
+update	admin/model/Order.php	/^		protected $update = ['order_update_time'];$/;"	v
+update	admin/model/Role.php	/^		protected $update = ['role_update_time'];$/;"	v
+update	admin/model/Rule.php	/^		protected $update = ['rule_update_time'];$/;"	v
+update	admin/model/User.php	/^		protected $update = ['user_update_time'];$/;"	v
+user	admin/model/Group.php	/^		public function user(){$/;"	f
+userSelected	admin/model/Group.php	/^		public function userSelected($group_id){$/;"	f
+user_id	admin/controller/User.php	/^			$user_id = Request::instance()->param('user_id');$/;"	v
+user_list	admin/controller/Group.php	/^			$user_list = (new \\app\\admin\\model\\User()) -> getList();$/;"	v
+user_old	admin/model/Group.php	/^					$user_old = [];$/;"	v
+user_selected	admin/controller/Group.php	/^			$user_selected = $this -> db -> userSelected($group_id);$/;"	v
+user_selected	admin/model/Group.php	/^					$user_selected = $group -> user() -> select();$/;"	v
+useredit	admin/controller/User.php	/^		public function useredit(){$/;"	f
+users	admin/controller/Commission.php	/^			$users = (new \\app\\admin\\model\\User()) -> getList();$/;"	v
+users	admin/model/Group.php	/^			$users = $group -> user() -> select();$/;"	v
+validate	admin/model/Authority.php	/^			$validate = Loader::validate('Authority');$/;"	v
+validate	admin/model/Commission.php	/^			$validate = Loader::validate('Commission');$/;"	v
+validate	admin/model/Group.php	/^			$validate = Loader::validate('Group');$/;"	v
+validate	admin/model/Order.php	/^			$validate = Loader::validate('Order');$/;"	v
+validate	admin/model/Role.php	/^			$validate = Loader::validate('Role');$/;"	v
+validate	admin/model/Rule.php	/^			$validate = Loader::validate('Rule');$/;"	v
+validate	admin/model/User.php	/^			$validate = Loader::validate('User');$/;"	v
+validate	admin/model/User.php	/^			$validate = new Validate([$/;"	v
+view	admin/controller/Order.php	/^		public function view(){$/;"	f
